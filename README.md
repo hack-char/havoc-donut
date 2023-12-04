@@ -3,7 +3,7 @@ Havoc C2 plugin to run shellcode with donut.
 See [Havoc C2](https://github.com/HavocFramework/Havoc) and [Donut](https://github.com/TheWover/donut).
 
 ## Requires PR
-Havoc C2 must have the shellcode inject API PR https://github.com/HavocFramework/Havoc/pull/435.
+Havoc C2 must have the shellcode spawn API PR https://github.com/HavocFramework/Havoc/pull/435.
 Can use https://github.com/hack-char/Havoc/tree/add_shellcode_spawn_api
 
 ## Notes
