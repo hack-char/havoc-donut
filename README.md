@@ -2,6 +2,10 @@
 Havoc C2 plugin to run shellcode with donut.
 See [Havoc C2](https://github.com/HavocFramework/Havoc) and [Donut](https://github.com/TheWover/donut).
 
+## Requires PR
+Havoc C2 must have the shellcode inject API PR https://github.com/HavocFramework/Havoc/pull/435.
+Can use https://github.com/hack-char/Havoc/tree/add_shellcode_spawn_api
+
 ## Notes
 * Must install and compile donut on the host you run your Havoc C2 client on. Must also install the donut python module.
 * Add the havoc-donut.py plugin in the client: click scripts->script manager->Load Script and choose havoc-donut.py
