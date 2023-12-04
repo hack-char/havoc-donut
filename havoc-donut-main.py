@@ -19,19 +19,19 @@ def spawn( demonID, *param ):
     demon : Demon = None
     demon = Demon(demonID)
 
-    if len(param)<1:
+    if len(param)<2:
         demon.ConsoleWrite(demon.CONSOLE_ERROR, "donut spawn requires a valid local executable file as parameter!")
         return False
 
-    localExe=param[0]
+    localExe=param[1]
 
     if not os.path.isfile(localExe):
         demon.ConsoleWrite(demon.CONSOLE_ERROR, "Not a valid file {}!".format(localExe))
         return False
 
     localParams=""
-    if len(param)>1:
-        localParams=" ".join(param[1:])
+    if len(param)>2:
+        localParams=" ".join(param[2:])
 
     try:
         shellcode = donut.create( file=localExe, params=localParams)

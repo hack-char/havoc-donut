@@ -9,6 +9,7 @@ Can use https://github.com/hack-char/Havoc/tree/add_shellcode_spawn_api
 ## Notes
 * Must install and compile donut on the host you run your Havoc C2 client on. Must also install the donut python module.
 * Add the havoc-donut.py plugin in the client: click scripts->script manager->Load Script and choose havoc-donut.py
+  * havoc-donut.py is for the Havoc C2 'dev' branch and havoc-donut-main.py is for the 'main' branch
 * If it gets loaded, can verify by typing 'help donut' in a listener window. Will see:
 ```
  - Command       :  donut
